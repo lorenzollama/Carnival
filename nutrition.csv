@@ -1,0 +1,81 @@
+key,food,fdc_id,protein_g,kcal,yield,collagen,verified,note
+chicken-breast,"Chicken breast, boneless skinless",171077,22.5,120,1.00,0,yes,
+chicken-thigh-bone-in,"Chicken thighs, bone-in",173627,19.7,121,0.70,0,yes,thigh meat only: skin comes off
+chicken-thigh,"Chicken thighs, boneless skinless",173627,19.7,121,1.00,0,yes,
+chicken-drumstick,Chicken drumsticks,173614,19.4,116,0.60,0,yes,drumstick meat only: skin comes off
+chicken-leg-quarter,"Chicken leg quarters, bone-in",173619,19.2,120,0.65,0,yes,yield estimated between thighs and drumsticks
+chicken-leg-meat,"Chicken leg meat, boneless",173619,19.2,120,1.00,0,yes,
+chicken-wing,Chicken wings,173632,22.0,126,0.45,0,yes,yield estimated: wings are mostly bone and skin
+chicken-whole,Whole chicken,171052,21.4,119,0.60,0,yes,yield estimated: meat only
+chicken-ground,Ground chicken,171116,17.4,143,1.00,0,yes,
+chicken-gizzard,Chicken gizzards,171456,17.7,94,1.00,0,yes,
+chicken-liver,Chicken livers,171060,16.9,119,1.00,0,yes,
+chicken-feet,Chicken feet (patas),171119,19.4,215,0.50,1,yes,USDA has no raw entry; values are for boiled
+turkey-ground-93,"Ground turkey, 93% lean",172850,18.7,150,1.00,0,yes,
+turkey-ground-85,"Ground turkey, 85% lean",174493,16.9,180,1.00,0,yes,
+turkey-breast-deli,"Turkey breast, sliced deli",172941,14.8,106,1.00,0,yes,
+pork-chop-bone-in,"Pork loin chops, bone-in",167829,22.0,127,0.70,0,yes,
+pork-loin,"Pork loin chops or roast, boneless",168263,23.8,123,0.95,0,yes,
+pork-tenderloin,Pork tenderloin,168249,21.0,109,1.00,0,yes,
+pork-butt-bone-in,"Pork shoulder (butt), bone-in",168260,18.7,132,0.70,0,yes,
+pork-butt,"Pork shoulder (butt), boneless, including al pastor",168260,18.7,132,0.85,0,yes,yield estimated: carries a lot of trimmable fat
+pork-leg,"Pork leg (pierna), bone-in",168224,20.5,136,0.70,0,yes,
+pork-country-ribs,Pork country-style ribs,168305,20.8,140,0.85,0,yes,yield estimated
+pork-spareribs,Pork spareribs,167853,15.5,277,0.70,0,yes,lean and fat: rib fat can't be trimmed away
+pork-ground,Ground pork,167902,16.9,263,1.00,0,yes,
+pork-belly,Pork belly,167812,9.34,518,1.00,0,yes,
+pork-shank,Pork shank (chamorro),168228,21.7,119,0.50,1,yes,the hock end of the leg: sold with skin and tendon
+pork-feet,Pork feet (patitas),167859,23.2,212,0.40,1,yes,
+pork-chorizo,Pork chorizo or longaniza,173859,13.6,296,1.00,0,yes,USDA has no longaniza; chorizo is the nearest fresh sausage
+bacon,Bacon,168277,13.7,393,1.00,0,yes,
+ham-deli,"Ham, sliced deli",173864,16.6,164,1.00,0,yes,
+ham-deli-lean,"Ham, sliced deli, 96% fat free",173863,16.8,107,1.00,0,yes,
+bologna,Bologna,172013,15.2,308,1.00,0,yes,
+hot-dogs,Hot dogs (franks),172968,10.3,290,1.00,0,yes,
+salami,Salami,174582,21.1,378,1.00,0,yes,
+beef-t-bone,Beef T-bone or porterhouse steak,168642,22.2,153,0.70,0,yes,
+beef-rib-eye-bone-in,"Beef rib eye steak, bone-in",169437,20.1,161,0.70,0,yes,
+beef-rib-eye,"Beef rib eye steak, boneless",169437,20.1,161,0.95,0,yes,
+beef-top-sirloin,Beef top sirloin steak,174055,22.1,131,0.95,0,yes,
+beef-round-tip,"Beef sirloin tip or round tip, including thin-sliced milanesa",173125,21.1,126,1.00,0,yes,
+beef-top-round,Beef top (inside) round,171757,23.6,121,1.00,0,yes,
+beef-bottom-round,Beef bottom round,174046,22.2,128,0.95,0,yes,
+beef-chuck,Beef chuck roll or chuck roast (diezmillo),169565,20.6,137,0.90,0,yes,yield estimated
+beef-stew,Beef stew meat,171206,21.8,128,0.95,0,yes,
+beef-flank,Beef flank steak (carne asada),174776,21.6,141,0.95,0,yes,
+beef-skirt,Beef skirt steak (arrachera),172137,20.9,171,0.95,0,yes,
+beef-shank,Beef shank crosscuts (chambarete),169441,21.8,128,0.60,0,yes,yield estimated: bone and marrow
+beef-ground-70,"Ground beef, 70% lean",168652,14.4,332,1.00,0,yes,
+beef-ground-75,"Ground beef, 75% lean",174037,15.8,293,1.00,0,yes,
+beef-ground-80,"Ground beef, 80% lean",174036,17.2,254,1.00,0,yes,
+beef-ground-90,"Ground beef, 90% lean",174030,20.0,176,1.00,0,yes,
+beef-ground-93,"Ground beef, 93% lean",173110,20.8,152,1.00,0,yes,
+beef-ground-95,"Ground beef, 95% lean",171790,21.4,137,1.00,0,yes,
+beef-liver,Beef liver,169451,20.4,135,1.00,0,yes,
+beef-tongue,Beef tongue (lengua),170196,14.9,224,1.00,0,yes,
+beef-tripe,Beef tripe (menudo),170599,12.1,85,1.00,1,yes,
+tilapia-fillet,Tilapia fillet,175176,20.1,96,1.00,0,yes,
+tilapia-whole,Whole tilapia (mojarra),175176,20.1,96,0.50,0,yes,
+catfish-fillet,"Catfish fillet, farmed",175165,15.2,119,1.00,0,yes,
+salmon-farmed,"Salmon fillet, Atlantic, farmed",175167,20.4,208,1.00,0,yes,
+salmon-pink,"Salmon fillet, pink",175138,20.5,127,1.00,0,yes,
+shrimp-peeled,"Shrimp, peeled",175179,20.1,85,1.00,0,yes,
+shrimp-shell-on,"Shrimp, shell-on",175179,20.1,85,0.85,0,yes,yield estimated
+tuna-canned,"Tuna, light, canned in water",173709,19.4,86,0.80,0,yes,yield: drained weight is about 80% of a can's net weight
+tuna-canned-albacore,"Tuna, albacore (white), canned in water",175158,23.6,128,0.80,0,yes,yield: drained weight is about 80% of a can's net weight
+eggs,"Eggs, whole",171287,12.6,143,1.00,0,yes,
+egg-whites,Egg whites,172183,10.9,52,1.00,0,yes,
+queso-fresco,Queso fresco,172223,18.1,299,1.00,0,yes,
+queso-cotija,Queso cotija,170898,20.0,366,1.00,0,yes,
+queso-oaxaca,Queso Oaxaca or asadero,173437,22.6,356,1.00,0,yes,
+queso-chihuahua,Queso Chihuahua,173438,21.6,374,1.00,0,yes,
+cottage-cheese,"Cottage cheese, 4%",172179,11.1,98,1.00,0,yes,
+cottage-cheese-2,"Cottage cheese, lowfat 2%",172182,10.4,81,1.00,0,yes,
+cottage-cheese-1,"Cottage cheese, lowfat 1%",173417,12.4,72,1.00,0,yes,
+greek-yogurt-nonfat,"Greek yogurt, plain, nonfat",171312,9.53,54,1.00,0,yes,
+greek-yogurt-lowfat,"Greek yogurt, plain, lowfat",170903,9.95,73,1.00,0,yes,
+greek-yogurt-whole,"Greek yogurt, plain, whole milk",171304,9.0,97,1.00,0,yes,
+cheddar,"Cheddar cheese, sliced",170899,24.2,410,1.00,0,yes,
+american-cheese,"American cheese, processed",170853,18.1,366,1.00,0,yes,
+cream-cheese,Cream cheese,173418,6.15,350,1.00,0,yes,
+milk-1,"Milk, 1%",170873,3.48,43,1.00,0,yes,
