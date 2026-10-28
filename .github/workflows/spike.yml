@@ -1,0 +1,42 @@
+name: spike
+on: push
+permissions:
+  contents: read
+jobs:
+  spike:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Download with curl
+        run: |
+          curl -sS -D headers.txt -o AD.pdf https://carnivalsupermarkets.com/sd-ad/AD.pdf
+          cat headers.txt
+          echo "::notice title=curl::$(head -1 headers.txt | tr -d '\r') | $(grep -i -E '^(content-length|last-modified|etag):' headers.txt | tr -d '\r' | tr '\n' ' ') | sha256 $(sha256sum AD.pdf | cut -c1-64)"
+      - name: Download with Python urllib and a conditional GET
+        run: |
+          python3 - <<'PY'
+          import hashlib, urllib.request, urllib.error
+          url = "https://carnivalsupermarkets.com/sd-ad/AD.pdf"
+          r = urllib.request.urlopen(url, timeout=30)
+          body = r.read()
+          lm = r.headers.get("Last-Modified")
+          print(f"::notice title=urllib::{r.status} len={len(body)} last-modified={lm} etag={r.headers.get('ETag')} sha256={hashlib.sha256(body).hexdigest()}")
+          try:
+              r2 = urllib.request.urlopen(urllib.request.Request(url, headers={"If-Modified-Since": lm}), timeout=30)
+              print(f"::notice title=conditional::{r2.status} (expected 304)")
+          except urllib.error.HTTPError as e:
+              print(f"::notice title=conditional::{e.code}")
+          PY
+      - name: Extract pages with pdfimages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq poppler-utils >/dev/null
+          pdfimages -list AD.pdf
+          mkdir pages && pdfimages -all AD.pdf pages/p
+          sha256sum pages/*
+          echo "::notice title=pdfimages::$(pdfimages -v 2>&1 | head -1) | $(apt-cache policy poppler-utils | grep Installed | xargs) | $(cd pages && sha256sum * | cut -c1-16,65- | tr '\n' ' ') | $(file -b pages/p-000.jpg | cut -c1-80)"
+      - name: Tool versions
+        run: |
+          echo "::notice title=versions::python $(python3 --version) | node $(node --version) | npm $(npm --version) | $(lsb_release -ds)"
+      - name: Probe sf0.co
+        run: |
+          echo "::notice title=sf0::$(curl -sS -o /dev/null -w '%{http_code} %{redirect_url}' https://sf0.co/ || true)"
